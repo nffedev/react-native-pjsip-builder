@@ -79,9 +79,9 @@ RUN cd /sources/android_sdk/tools && \
 
 # Download Pjsip
 RUN cd /sources/pjsip && \
-    curl -L -# -o pjsip.tar.bz2 "$PJSIP_DOWNLOAD_URL" && \
-    tar xvf pjsip.tar.bz2 && \
-    rm -rf pjsip.tar.bz2 && \
+    curl -L -# -o pjsip.tar.gz "$PJSIP_DOWNLOAD_URL" && \
+    tar xzf pjsip.tar.gz && \
+    rm -rf pjsip.tar.gz && \
     mv pjproject-*/* ./
 
 # Download Swig
